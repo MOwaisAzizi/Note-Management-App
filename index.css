@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    background-color: rgb(71, 244, 13);
+    text-align: center;
+    font-size: 35px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+}
+
+#d1 {
+    margin: auto;
+    width: 60%;
+    border: solid black 1px;
+    margin-top: 15px;
+    border-radius: 40px;
+    background-color: white;
+}
+
+#in1,
+#in2,
+#in3 {
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 15px;
+    padding: 12px 5px;
+    border-radius: 5px;
+
+}
+
+#in4 {
+    padding: 6px;
+    background-color: blue;
+    border-radius: 4px;
+    margin-left: 6%;
+    border: blue 1px solid;
+    margin-bottom: 80px;
+    color: yellow;
+}
+
+#d2 {
+    margin: auto;
+    width: 60%;
+    border: solid black 1px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: white;
+    padding: 15px;
+}
+
+div {
+    width: 95%;
+    border: solid 1px black;
+    margin: auto;
+    margin-bottom: 8px;
+    margin-top: 5px;
+    font-size: 16px;
+    padding: 20px 10px 20px 10px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+#b1 {
+    background-color: rgb(43, 187, 43);
+    padding: 5px;
+    border-radius: 3px;
+    border: solid rgb(35, 195, 35) 1px;
+}
+
+#b2 {
+    background-color: red;
+    padding: 5px;
+    border-radius: 3px;
+    border: solid red 1px;
+
+
+}
+
+#d2:hover {
+    box-shadow: 7px 7px 5px rgb(195, 185, 185);
+    border: 1.5px solid black;
+}
+
+#d1:hover {
+    box-shadow: 7px 7px 5px rgb(195, 185, 185);
+    border: 1.5px solid black;
+}
+
+#in1:hover {
+    border-radius: 12px;
+    border: solid black 1.5px;
+}
+
+#in2:hover {
+    border-radius: 12px;
+    border: solid black 1.5px;
+}
+
+#in3:hover {
+    border-radius: 12px;
+    border: solid black 1.5px;
+}
+
+#in4:hover {
+    color: black;
+}
+
+div:hover {
+    border: 2px black solid;
+}
+
+#b1:hover {
+    border: solid black 1px;
+    background-color: rgb(75, 241, 75);
+}
+
+#b2:hover {
+    border: solid black 1px;
+    background-color: rgb(253, 93, 93);
+}
+
+@media screen and (max-width: 900px) {
+    #d1 {
+        width: 80%;
+    }
+
+    #d2 {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #d1 {
+        width: 90%;
+    }
+
+    #d2 {
+        width: 90%;
+    }
+}
+
+body {
+    counter-reset: Note;
+}
+
+#div::before {
+    counter-increment: Note;
+    content: "Note" counter(Note) ": ";
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
